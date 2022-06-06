@@ -107,7 +107,7 @@ extern bool lstHasCurrent (const ListPtr psList);
 //			not NULL; otherwise, false is returned
 // 			error code priority: ERROR_INVALID_LIST
 
-extern bool lstHasNext (const ListPtr psList);
+extern bool lstHasNext (const ListPtr psList);  /// CUT
  // results: Returns true if the current node pointed to by psCurrent
  //					 has a successor; otherwise, false is returned
  // 				 error code priority: ERROR_INVALID_LIST
@@ -123,7 +123,7 @@ extern void *lstPeek (const ListPtr psList, void *pBuffer, int size);
 //            error code priority: ERROR_INVALID_LIST, ERROR_NULL_PTR,
 //							       ERROR_EMPTY_LIST, ERROR_NO_CURRENT
 
-extern void *lstPeekNext (const ListPtr psList, void *pBuffer, int size);
+extern void *lstPeekNext (const ListPtr psList, void *pBuffer, int size);  //// CUT
 // requires:  List contains two or more elements and psCurrent is not last
 // results:   The data value of psCurrent's successor is returned
 // IMPORTANT: Do not change psCurrent
