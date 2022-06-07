@@ -110,7 +110,7 @@ extern bool lstHasCurrent (const ListPtr psList);
 extern bool lstHasNext (const ListPtr psList);  /// CUT
  // results: Returns true if the current node pointed to by psCurrent
  //					 has a successor; otherwise, false is returned
- // 				 error code priority: ERROR_INVALID_LIST
+ // 				 error code priority: ERROR_INVALID_LIST, ERROR_NO_CURRENT
 
 //*************************************************************************
 //													Peek Operations
