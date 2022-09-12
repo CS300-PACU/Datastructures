@@ -7,7 +7,7 @@
 # Purpose:    
 #############################################################################
 
-CFLAGS=-g -Wall
+CFLAGS=-g -Wall -Iinclude
 VALGRIND_FLAGS=-v --leak-check=yes --track-origins=yes --leak-check=full --show-leak-kinds=all
 all: bin bin/main
 
