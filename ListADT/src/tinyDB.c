@@ -125,12 +125,12 @@ void loadDB(ListPtr psTheList)
   Part sItem;
 
   pDB = fopen("data/items.dat","r");
+ 	fscanf(pDB, "%d %lf",&sItem.partNumber, &sItem.price);
 	while(!feof(pDB))
 	{
-		fscanf(pDB, "%d %lf",&sItem.partNumber, &sItem.price);
+	  // TODO: INSERT PART INTO LIST
 
-    // TODO: INSERT PART INTO LIST
-    
+  	fscanf(pDB, "%d %lf",&sItem.partNumber, &sItem.price);  
 	}
 	fclose(pDB);
 }
