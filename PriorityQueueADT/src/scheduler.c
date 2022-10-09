@@ -142,6 +142,7 @@ void loadProcesses(PriorityQueuePtr psPQ)
     // TODO: Add the process to the PQ!
 
 
+    // must be last line in loop
 		fscanf(pFile, "%d %d",&sProc.processID, &runtime);
 	}
 	fclose(pFile);
@@ -194,8 +195,7 @@ int main()
         terminateProcess(&sPQ);
         break;
     }
- 		fscanf(pActions, "%c",&action);
-
+ 		fscanf(pActions, "%c",&action); // must be last line in loop
   }
   fclose(pActions);
 
