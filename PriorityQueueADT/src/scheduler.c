@@ -134,14 +134,15 @@ void loadProcesses(PriorityQueuePtr psPQ)
   int runtime;
   Process sProc;
 
-  pFile = fopen("data/processes.dat","r");
+  pFile = fopen("data/processes0.dat","r");
+	fscanf(pFile, "%d %d",&sProc.processID, &runtime);
+
 	while(!feof(pFile))
 	{
-		fscanf(pFile, "%d %d",&sProc.processID, &runtime);
-
     // TODO: Add the process to the PQ!
 
 
+		fscanf(pFile, "%d %d",&sProc.processID, &runtime);
 	}
 	fclose(pFile);
 }
