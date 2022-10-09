@@ -169,9 +169,9 @@ int main()
   loadProcesses(&sPQ);
   
   pActions = fopen("data/actions.dat","r");
+	fscanf(pActions, "%c",&action);
 	while(!feof(pActions))
 	{
-		fscanf(pActions, "%c",&action);
 
     switch(action)
     {
@@ -194,6 +194,8 @@ int main()
         terminateProcess(&sPQ);
         break;
     }
+ 		fscanf(pActions, "%c",&action);
+
   }
   fclose(pActions);
 
